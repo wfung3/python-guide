@@ -1,30 +1,35 @@
-==================
+
+##################
 Image Manipulation
-==================
+##################
+
+.. image:: /_static/photos/34575689432_3de8e9a348_k_d.jpg
 
 Most image processing and manipulation techniques can be carried out
-effectively using two libraries: Python Imaging Library (PIL)  and OpenSource
+effectively using two libraries: Python Imaging Library (PIL) and Open Source
 Computer Vision (OpenCV).
 
 A brief description of both is given below.
 
+
+**********************
 Python Imaging Library
-----------------------
+**********************
 
 The `Python Imaging Library <http://www.pythonware.com/products/pil/>`_, or PIL
 for short, is one of the core libraries for image manipulation in Python. Unfortunately,
 its development has stagnated, with its last release in 2009.
 
 Luckily for you, there's an actively-developed fork of PIL called
-`Pillow <http://python-pillow.github.io/>`_ - it's easier to install, runs on
-all operating systems, and supports Python 3.
+`Pillow <http://python-pillow.github.io/>`_ -- it's easier to install, runs on
+all major operating systems, and supports Python 3.
 
 Installation
 ~~~~~~~~~~~~
 
 Before installing Pillow, you'll have to install Pillow's prerequisites. Find
 the instructions for your platform in the
-`Pillow installation instructions <https://pillow.readthedocs.org/en/3.0.0/installation.html>`_.
+`Pillow installation instructions <https://pillow.readthedocs.io/en/3.0.0/installation.html>`_.
 
 After that, it's straightforward:
 
@@ -57,13 +62,14 @@ Example
     exif_data
 
 There are more examples of the Pillow library in the
-`Pillow tutorial <http://pillow.readthedocs.org/en/3.0.x/handbook/tutorial.html>`_.
+`Pillow tutorial <https://pillow.readthedocs.io/en/3.0.x/handbook/tutorial.html>`_.
 
 
-OpenSource Computer Vision
---------------------------
+***************************
+Open Source Computer Vision
+***************************
 
-OpenSource Computer Vision, more commonly known as OpenCV, is a more advanced
+Open Source Computer Vision, more commonly known as OpenCV, is a more advanced
 image manipulation and processing software than PIL. It has been implemented
 in several languages and is widely used.
 
@@ -87,8 +93,7 @@ Example
 
 .. code-block:: python
 
-    from cv2 import *
-    import numpy as np
+    import cv2
     #Read Image
     img = cv2.imread('testimg.jpg')
     #Display Image
@@ -104,4 +109,4 @@ Example
 
 There are more Python-implemented examples of OpenCV in this `collection of
 tutorials
-<http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_tutorials.html>`_.
+<https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html>`_.
